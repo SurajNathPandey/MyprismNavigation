@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+                  prism:ViewModelLocator.AutowireViewModel="True"
+                  x:Class="Productsample.Views.Homepage" Title="Homepage">
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="ffhfh">
+            <StackLayout>
+                <Image Source="About.png" HorizontalOptions="Start"
+                       VerticalOptions="Start">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding bindmenupage}">
+                            
+                        </TapGestureRecognizer>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="this is masterpage" HorizontalOptions="Center"
+                       VerticalOptions="Center"></Label>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <ContentPage>
+            <StackLayout>
+                <Image Source="menu.png" HorizontalOptions="Start"
+                       VerticalOptions="Start">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" >
+
+                        </TapGestureRecognizer>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="this is detailspage" HorizontalOptions="Center"
+                       VerticalOptions="Center"></Label>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+    
+</MasterDetailPage>
