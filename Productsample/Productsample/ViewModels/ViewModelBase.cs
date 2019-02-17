@@ -8,7 +8,7 @@ using System.Text;
 namespace Productsample.ViewModels
 {
     public class ViewModelBase : BindableBase, INavigationAware, IDestructible
-    {
+    {//hvhhghghg
         protected INavigationService NavigationService { get; private set; }
 
         private string _title;
